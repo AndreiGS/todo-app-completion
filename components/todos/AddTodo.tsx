@@ -91,17 +91,7 @@ const AddTodo = ({ setIsModalVisible }: IAddTodoProps) => {
           <Text style={{ fontSize: 16, fontWeight: 'bold', marginLeft: '5%' }}>
             Category:
           </Text>
-          <Picker
-            selectedValue={todoCategory}
-            onValueChange={(itemValue) => setTodoCategory(itemValue)}>
-            {categories.map((item: ICategory) => (
-              <Picker.Item
-                key={item.id}
-                label={item.label}
-                value={item.value}
-              />
-            ))}
-          </Picker>
+          // TODO add a picker for category
 
           <View
             style={{

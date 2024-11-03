@@ -30,9 +30,8 @@ const todoSlice = createSlice({
       state.todos = remainingTodos;
     },
     toggleTodo: (state, { payload }: PayloadAction<string>) => {
-      const index = state.todos.findIndex((todo) => todo.id === payload);
-
-      state.todos[index].isCompleted = !state.todos[index].isCompleted;
+      // TODO Toggle the completion of the todo
+      // Hint: Look at the remove, it is similar
     },
   },
 });

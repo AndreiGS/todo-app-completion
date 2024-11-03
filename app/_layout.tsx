@@ -18,7 +18,7 @@ export {
 
 export const unstable_settings = {
   // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: '(tabs)',
+  initialRouteName: '', // TODO: What do you think is it? The answer is in this file
 };
 
 export default function RootLayout() {
@@ -34,9 +34,7 @@ export default function RootLayout() {
 
   return (
     <>
-      {/* Keep the splash screen open until the assets have loaded. In the future, we should just support async font loading with a native version of font-display. */}
-      {!loaded && <SplashScreen />}
-      {loaded && <RootLayoutNav />}
+      {/* TODO Keep the splash screen open until the assets have loaded. In the future, we should just support async font loading with a native version of font-display. */}
     </>
   );
 }

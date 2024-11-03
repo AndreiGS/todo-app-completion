@@ -20,6 +20,7 @@ import { ITodoItemProps } from '../../interfaces';
  * @version 1.0.0
  */
 
+// TODO: Make it go to a description screen of the todo when clicked. This is not in the original repo :)
 const TodoItem = ({ item }: ITodoItemProps) => {
   const dispatch = useDispatch();
 

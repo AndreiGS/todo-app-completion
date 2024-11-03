@@ -26,13 +26,7 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <TabBarIcon name='list' color={color} />,
         }}
       />
-      <Tabs.Screen
-        name='CategoriesScreen'
-        options={{
-          title: 'Categories',
-          tabBarIcon: ({ color }) => <TabBarIcon name='folder' color={color} />,
-        }}
-      />
+      // TODO add the Categories Screen to the tabs
     </Tabs>
   );
 }

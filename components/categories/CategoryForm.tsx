@@ -19,24 +19,21 @@ import { RootState } from '../../store/store';
 
 const CategoryForm = () => {
   const [categoryName, setCategoryName] = useState('');
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); // TODO look into redux-toolkit. Easier than redux, but still need to work a little. What other state management tools can you find?
   const categories = useSelector(
     (state: RootState) => state.categories.categories
   );
 
   const handleSubmit = () => {
-    if (!categoryName) {
-      alert('Please Enter Category!');
-    } else {
-      dispatch(
-        addCategory({
-          label: categoryName,
-          id: categories.length + 1,
-          value: categoryName,
-        })
-      );
-      setCategoryName('');
-    }
+    // TODO Add a validation first. No empty categories should exist
+    dispatch(
+      addCategory({
+        label: categoryName,
+        id: categories.length + 1,
+        value: categoryName,
+      })
+    );
+    setCategoryName('');
   };
 
   return (

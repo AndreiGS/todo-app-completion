@@ -31,7 +31,7 @@ const CategoriesList = () => {
   );
 
   const handleDelete = (id: number) => {
-    dispatch(removeCategory(id));
+    // TODO delete the item
   };
 
   const renderItem = ({ item }: { item: ICategory }) => {
@@ -48,11 +48,7 @@ const CategoriesList = () => {
   };
 
   return (
-    <FlatList
-      data={categories}
-      renderItem={renderItem}
-      keyExtractor={(item) => item.id.toString()}
-    />
+    // Render the list using the renderItem function
   );
 };
 
